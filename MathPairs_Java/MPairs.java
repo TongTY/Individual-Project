@@ -55,14 +55,13 @@ public class MPairs {
         // count occurence
         String OuterKey;
         String InnerKey;
-        Integer Count = new Integer(0);
-        HashMap<String, Integer> TempInnerMap = new HashMap<>();
+        Integer Count;
 
         for (int i = 0; i < Combo_Tag.size(); i++) {
             for (int j = 0; j < Combo_Tag.get(i).length - 1; j++) {
                 if (Combo_Tag.get(i)[j] != null) {
                     OuterKey = Combo_Tag.get(i)[j];
-
+                    HashMap<String, Integer> TempInnerMap;
                     TempInnerMap = OuterMap.get(OuterKey);
 
                     for (j=j+1; j < Combo_Tag.get(i).length; j++) {
@@ -73,12 +72,12 @@ public class MPairs {
                             if (Count != null) {
                                 TempInnerMap.replace(InnerKey, Count + 1);
                                 OuterMap.replace(OuterKey, TempInnerMap);
-                            } else {continue;}
-                            } else {continue;}  // second if
-            //            TempInnerMap.clear();
+                            }
+                        }
                     }
 
-                } else {continue;}   // first if
+                }
+
             }
         }
 
