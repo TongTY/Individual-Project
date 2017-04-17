@@ -1,7 +1,7 @@
 # Individual-Project
 This repository is used to record the progress of COMP4560 project.
 
-# What's new this week:
+## What's new this week:
 (18/04) 
 I added two files into folder MathPairs_Java.
 1. 'MathPairs.java'is the code for finding out all the association pairs and the final results are stored in 'OuterMap', which works well.
