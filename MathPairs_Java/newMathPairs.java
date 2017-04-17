@@ -77,8 +77,6 @@ public class MathPairs {
             }
         }
 
-
-
         //support value:
         List<Item> OneWayPairs = new ArrayList<>();
 
@@ -104,13 +102,12 @@ public class MathPairs {
 
             }
         }
-        System.out.println(OneWayPairs);
 
-      //  System.out.println(OuterMap);
+        for (int i = 0; i < OneWayPairs.size(); i ++){
 
-
-
+            if (OneWayPairs.get(i).TotalCount / Combo_Tag.size() > 0.01) {
+                System.out.println(OneWayPairs.get(i).OuterTag + "," + OneWayPairs.get(i).InnerTag + ":" + OneWayPairs.get(i).TotalCount);
+            }
+        }
     }
-
-
 }
