@@ -9,6 +9,9 @@ I added two files into folder MathPairs_Java.
 
 ### MathPairs_Java:
 The folder for storing the code and files used in finding association-rule pairs of MathDataBase.
+
+'Results' is used to store the results based on different support values.
+
 ### D3ExerciseFiles:
 The folder for storing the exercises of D3.js.
 
