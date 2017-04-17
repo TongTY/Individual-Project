@@ -11,6 +11,22 @@ import java.util.List;
  * Created by Tong on 13/4/17.
  */
 public class MathPairs {
+    static class Item implements Comparable<Item> {
+        private String OuterTag;
+        private String InnerTag;
+        private Integer TotalCount;
+
+        Item(String outertag, String innertag, Integer totalcount){
+            this.OuterTag = outertag;
+            this.InnerTag = innertag;
+            this.TotalCount = totalcount;
+        }
+
+        @Override
+        public int compareTo(@NotNull Item o) {
+            return 0;
+        }
+    }
 
     public static void main(String[] args) throws Exception{
 
@@ -61,22 +77,7 @@ public class MathPairs {
             }
         }
 
-        class Item implements Comparable<Item> {
-            private String OuterTag;
-            private String InnerTag;
-            private Integer TotalCount;
 
-            Item(String outertag, String innertag, Integer totalcount){
-                this.OuterTag = outertag;
-                this.InnerTag = innertag;
-                this.TotalCount = totalcount;
-            }
-
-            @Override
-            public int compareTo(@NotNull Item o) {
-                return 0;
-            }
-        }
 
         //support value:
         List<Item> OneWayPairs = new ArrayList<>();
