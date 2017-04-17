@@ -12,17 +12,6 @@ import java.util.List;
  */
 public class MathPairs {
 
-    public class Item implements Comparable<Item> {
-        private String OuterTag;
-        private String InnerTag;
-        private Integer TotalCount;
-        
-        @Override
-        public int compareTo(@NotNull Item o) {
-            return 0;
-        }
-    }
-
     public static void main(String[] args) throws Exception{
 
         List<String[]> Combo_Tag = new ArrayList<>();
@@ -72,30 +61,55 @@ public class MathPairs {
             }
         }
 
-        HashMap<String, HashMap<String, Integer>> OneWayPairMap = new HashMap<>();
+        class Item implements Comparable<Item> {
+            private String OuterTag;
+            private String InnerTag;
+            private Integer TotalCount;
 
+            Item(String outertag, String innertag, Integer totalcount){
+                this.OuterTag = outertag;
+                this.InnerTag = innertag;
+                this.TotalCount = totalcount;
+            }
+
+            @Override
+            public int compareTo(@NotNull Item o) {
+                return 0;
+            }
+        }
+
+        //support value:
+        List<Item> OneWayPairs = new ArrayList<>();
 
         for (String okey : OuterMap.keySet()) {
             for (String ikey : OuterMap.get(okey).keySet()) {
+
                 if (OuterMap.containsKey(ikey)){
                     if (OuterMap.get(ikey).containsKey(okey)){
-                        HashMap<String, Integer> TempMap = new HashMap<>();
                         int OCount;
 
                         OCount = OuterMap.get(okey).get(ikey)
                                 + OuterMap.get(ikey).get(okey);
-                        TempMap.put(ikey, OCount);
-                        OneWayPairMap.put(okey, TempMap);
+                        Item TempItem = new Item (okey, ikey, OCount);
+
+                        OneWayPairs.add(TempItem);
                     } else {
-                        OneWayPairMap.put(okey, OuterMap.get(okey));
+
+                        Item TempItem = new Item(okey, ikey, OuterMap.get(okey).get(ikey));
+
+                        OneWayPairs.add(TempItem);
                     }
                 }
 
             }
         }
-        System.out.println(OneWayPairMap);
-        //support value:
-        // count the total count of tag1 & tag2
+        System.out.println(OneWayPairs);
+
+      //  System.out.println(OuterMap);
+
+
 
     }
+
+
 }
