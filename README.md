@@ -9,17 +9,17 @@ This repository is used to record the progress of COMP4560 project.
 ## Files:
 ### MathPairs_Java:
 The folder for storing the code and files used in finding association-rule pairs of MathDataBase.
-'Results' is used to store the results based on different support values.
-'MathPairs.java'is the code for finding out all the association pairs 
+1. 'Results' is used to store the results based on different support values.
+2. 'MathPairs.java'is the code for finding out all the association pairs 
 
 ### D3ExerciseFiles:
 The folder for storing the exercises of D3.js.
 
 ### Data Visualisation:
 This forder is used to store all the files that are relatived to data visualisation.
-'1_Data.json': the data in this file is based on support value=5%.
-'1_Graph.png': the first graph of the data in 1_Data.json.
-'1_mathtry.html': the html file.
+1. '1_Data.json': the data in this file is based on support value=5%.
+2. '1_Graph.png': the first graph of the data in 1_Data.json.
+3. '1_mathtry.html': the html file.
 
 ## Information record for each week:
 (18/04) 
