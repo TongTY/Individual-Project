@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -98,16 +99,60 @@ public class MathPairs {
 
                         OneWayPairs.add(TempItem);
                     }
+                }  else {
+
+                    Item TempItem = new Item(okey, ikey, OuterMap.get(okey).get(ikey));
+
+                    OneWayPairs.add(TempItem);
                 }
 
             }
         }
+        // remove the repeated record
+      /*  Iterator<Item> record_1 = OneWayPairs.iterator();
+        while (record_1.hasNext()){
+            Item item_1 = record_1.next();
+            Iterator<Item>  record_2 = OneWayPairs.iterator();
+            while (record_2.hasNext()){
+                Item item_2 = record_2.next();
+                if (item_2.OuterTag.equals(item_1.InnerTag) &&
+                        item_2.InnerTag.equals(item_1.OuterTag)){
+                    OneWayPairs.remove(item_2);
+                }
+            }
+        }
+
+     /*   for (int i = 0; i < OneWayPairs.size(); i ++){
+            for (int j = 1; j < OneWayPairs.size(); j ++){
+                if(OneWayPairs.get(i).InnerTag.equals(OneWayPairs.get(j).OuterTag)
+                        && OneWayPairs.get(i).OuterTag.equals(OneWayPairs.get(i).InnerTag)){
+                    OneWayPairs.remove(j);
+                }
+            }
+        }*/
+     //   System.out.println(OuterMap);
+
+  /*      double sv = OneWayPairs.size() * 0.1;
 
         for (int i = 0; i < OneWayPairs.size(); i ++){
 
-            if (OneWayPairs.get(i).TotalCount / Combo_Tag.size() > 0.01) {
+            if (OneWayPairs.get(i).TotalCount > sv) {
                 System.out.println(OneWayPairs.get(i).OuterTag + "," + OneWayPairs.get(i).InnerTag + ":" + OneWayPairs.get(i).TotalCount);
             }
         }
+
+  /*  ===== check if situation ta->tb & tb->ta exists ===== yes, it does
+
+        for (String okey : OuterMap.keySet()){
+            for (String ikey : OuterMap.get(okey).keySet()){
+                if (OuterMap.containsKey(ikey)){
+                    if (OuterMap.get(ikey).containsKey(okey)){
+                        System.out.println(okey + "," + ikey + ":" + OuterMap.get(okey).get(ikey) + ";" + OuterMap.get(ikey).get(okey));
+                    }
+
+                }
+            }
+        }
+ */
     }
 }
