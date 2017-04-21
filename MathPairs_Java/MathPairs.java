@@ -1,8 +1,9 @@
+import org.jetbrains.annotations.NotNull;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+import java.lang.reflect.Array;
+import java.util.*;
 
 /**
  * Created by Tong on 13/4/17.
@@ -47,26 +48,59 @@ public class MathPairs {
                         }
                     }
                 } else {
+
                     HashMap<String, Integer> TempInnerMap = new HashMap<>();
 
                     for (int n = j + 1; n < Combo_Tag.get(i).length; n ++) {
                         TempInnerMap.put(Combo_Tag.get(i)[n], 1);
                         OuterMap.put(Combo_Tag.get(i)[j], TempInnerMap);
                     }
-                    System.out.println(TempInnerMap);
                 }
             }
         }
+
+        //get undirected pairs:
+        Map<Set, Integer> OneWayPairs= new HashMap<>();
 
         for (String okey : OuterMap.keySet()) {
             for (String ikey : OuterMap.get(okey).keySet()) {
-                int final_count = OuterMap.get(okey).get(ikey);
 
-                if (final_count / Combo_Tag.size() > 0.0001) {
-                    System.out.println("(" + okey + "," + ikey + ") " + ": " + final_count);
+                if (OuterMap.containsKey(ikey)) {
+                    if (OuterMap.get(ikey).containsKey(okey)) {
+                        int OCount;
+                        Set<String> TwoTags = new HashSet<>();
+
+                        OCount = OuterMap.get(okey).get(ikey)
+                                + OuterMap.get(ikey).get(okey);
+                        TwoTags.add(okey);
+                        TwoTags.add(ikey);
+                        if (!OneWayPairs.containsKey(TwoTags)) {
+                            OneWayPairs.put(TwoTags, OCount);
+                        }
+                    } else {
+                        Set<String> TwoTags = new HashSet<>();
+
+                        TwoTags.add(okey);
+                        TwoTags.add(ikey);
+                        OneWayPairs.put(TwoTags, OuterMap.get(okey).get(ikey));
+                    }
+                } else {
+                    Set<String> TwoTags = new HashSet<>();
+
+                    TwoTags.add(okey);
+                    TwoTags.add(ikey);
+                    OneWayPairs.put(TwoTags, OuterMap.get(okey).get(ikey));
                 }
 
             }
         }
+
+        double sv = OneWayPairs.size() * 0.05;
+        for (Set pair : OneWayPairs.keySet()){
+            if (OneWayPairs.get(pair) > sv) {
+                System.out.println(pair + ":" + OneWayPairs.get(pair));
+            }
+        }
+
     }
 }
