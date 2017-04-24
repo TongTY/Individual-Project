@@ -1,48 +1,1473 @@
 {"nodes": [
-  {"id": "integration"},
-  {"id": "definite-integrals"},
-  {"id": "calculus"},
-  {"id": "real-analysis"},
-  {"id": "analysis"},
-  {"id": "measure-theory"},
-  {"id": "sequences-and-series"},
-  {"id": "probability-theory"},
-  {"id": "probability-distributions"},
-  {"id": "statistics"},
-  {"id": "probability"},
-  {"id": "group-theory"},
-  {"id": "finite-groups"},
-  {"id": "matrices"},
-  {"id": "linear-algebra"},
-  {"id": "vector-spaces"},
-  {"id": "derivatives"},
-  {"id": "limits"},
-  {"id": "sequences-and-series"},
-  {"id": "ring-theory"},
-  {"id": "abstract-algebra"},
-  {"id": "probability-theory"}
+    {
+      "id": "binomial-coefficients",
+      "group": 0
+    },
+    {
+      "id": "combinatorics",
+      "group": 0
+    },
+    {
+      "id": "polynomials",
+      "group": 1
+    },
+    {
+      "id": "abstract-algebra",
+      "group": 1
+    },
+    {
+      "id": "measure-theory",
+      "group": 3
+    },
+    {
+      "id": "probability",
+      "group": 0
+    },
+    {
+      "id": "complex-analysis",
+      "group": 3
+    },
+    {
+      "id": "analysis",
+      "group": 3
+    },
+    {
+      "id": "group-theory",
+      "group": 1
+    },
+    {
+      "id": "finite-groups",
+      "group": 1
+    },
+    {
+      "id": "geometry",
+      "group": 2
+    },
+    {
+      "id": "euclidean-geometry",
+      "group": 2
+    },
+    {
+      "id": "sequences-and-series",
+      "group": 3
+    },
+    {
+      "id": "limits",
+      "group": 3
+    },
+    {
+      "id": "real-analysis",
+      "group": 3
+    },
+    {
+      "id": "integration",
+      "group": 3
+    },
+    {
+      "id": "first-order-logic",
+      "group": 4
+    },
+    {
+      "id": "logic",
+      "group": 4
+    },
+    {
+      "id": "probability-distributions",
+      "group": 0
+    },
+    {
+      "id": "random-variables",
+      "group": 0
+    },
+    {
+      "id": "trigonometry",
+      "group": 3
+    },
+    {
+      "id": "calculus",
+      "group": 3
+    },
+    {
+      "id": "optimization",
+      "group": 3
+    },
+    {
+      "id": "algebraic-geometry",
+      "group": 1
+    },
+    {
+      "id": "commutative-algebra",
+      "group": 1
+    },
+    {
+      "id": "differential-equations",
+      "group": 3
+    },
+    {
+      "id": "linear-algebra",
+      "group": 2
+    },
+    {
+      "id": "vector-spaces",
+      "group": 2
+    },
+    {
+      "id": "lie-groups",
+      "group": 5
+    },
+    {
+      "id": "lie-algebras",
+      "group": 5
+    },
+    {
+      "id": "definite-integrals",
+      "group": 3
+    },
+    {
+      "id": "lebesgue-integral",
+      "group": 3
+    },
+    {
+      "id": "stochastic-processes",
+      "group": 0
+    },
+    {
+      "id": "probability-theory",
+      "group": 0
+    },
+    {
+      "id": "functions",
+      "group": 3
+    },
+    {
+      "id": "elementary-set-theory",
+      "group": 3
+    },
+    {
+      "id": "derivatives",
+      "group": 3
+    },
+    {
+      "id": "brownian-motion",
+      "group": 0
+    },
+    {
+      "id": "ideals",
+      "group": 1
+    },
+    {
+      "id": "ring-theory",
+      "group": 1
+    },
+    {
+      "id": "predicate-logic",
+      "group": 4
+    },
+    {
+      "id": "number-theory",
+      "group": 1
+    },
+    {
+      "id": "convergence",
+      "group": 3
+    },
+    {
+      "id": "algebra-precalculus",
+      "group": 3
+    },
+    {
+      "id": "inequality",
+      "group": 3
+    },
+    {
+      "id": "linear-transformations",
+      "group": 2
+    },
+    {
+      "id": "roots",
+      "group": 1
+    },
+    {
+      "id": "modular-arithmetic",
+      "group": 1
+    },
+    {
+      "id": "elementary-number-theory",
+      "group": 1
+    },
+    {
+      "id": "differential-topology",
+      "group": 6
+    },
+    {
+      "id": "differential-geometry",
+      "group": 6
+    },
+    {
+      "id": "algebraic-topology",
+      "group": 3
+    },
+    {
+      "id": "homotopy-theory",
+      "group": 3
+    },
+    {
+      "id": "continuity",
+      "group": 3
+    },
+    {
+      "id": "general-topology",
+      "group": 3
+    },
+    {
+      "id": "combinations",
+      "group": 0
+    },
+    {
+      "id": "permutations",
+      "group": 0
+    },
+    {
+      "id": "functional-analysis",
+      "group": 3
+    },
+    {
+      "id": "hilbert-spaces",
+      "group": 3
+    },
+    {
+      "id": "proof-verification",
+      "group": 3
+    },
+    {
+      "id": "abelian-groups",
+      "group": 1
+    },
+    {
+      "id": "connectedness",
+      "group": 3
+    },
+    {
+      "id": "multivariable-calculus",
+      "group": 3
+    },
+    {
+      "id": "matrix-equations",
+      "group": 2
+    },
+    {
+      "id": "matrices",
+      "group": 2
+    },
+    {
+      "id": "manifolds",
+      "group": 6
+    },
+    {
+      "id": "extension-field",
+      "group": 1
+    },
+    {
+      "id": "field-theory",
+      "group": 1
+    },
+    {
+      "id": "banach-spaces",
+      "group": 3
+    },
+    {
+      "id": "riemannian-geometry",
+      "group": 6
+    },
+    {
+      "id": "determinant",
+      "group": 2
+    },
+    {
+      "id": "statistics",
+      "group": 0
+    },
+    {
+      "id": "numerical-linear-algebra",
+      "group": 2
+    },
+    {
+      "id": "schemes",
+      "group": 1
+    },
+    {
+      "id": "prime-numbers",
+      "group": 1
+    },
+    {
+      "id": "lebesgue-measure",
+      "group": 3
+    },
+    {
+      "id": "metric-spaces",
+      "group": 3
+    },
+    {
+      "id": "operator-theory",
+      "group": 3
+    },
+    {
+      "id": "diophantine-equations",
+      "group": 1
+    },
+    {
+      "id": "expectation",
+      "group": 0
+    },
+    {
+      "id": "taylor-expansion",
+      "group": 3
+    },
+    {
+      "id": "normed-spaces",
+      "group": 3
+    },
+    {
+      "id": "discrete-mathematics",
+      "group": 0
+    },
+    {
+      "id": "graph-theory",
+      "group": 0
+    },
+    {
+      "id": "fourier-series",
+      "group": 7
+    },
+    {
+      "id": "fourier-analysis",
+      "group": 7
+    },
+    {
+      "id": "compactness",
+      "group": 3
+    },
+    {
+      "id": "triangle",
+      "group": 2
+    },
+    {
+      "id": "circle",
+      "group": 2
+    },
+    {
+      "id": "algebraic-number-theory",
+      "group": 1
+    },
+    {
+      "id": "galois-theory",
+      "group": 1
+    },
+    {
+      "id": "representation-theory",
+      "group": 1
+    },
+    {
+      "id": "eigenvalues-eigenvectors",
+      "group": 2
+    },
+    {
+      "id": "summation",
+      "group": 3
+    },
+    {
+      "id": "modules",
+      "group": 1
+    },
+    {
+      "id": "divisibility",
+      "group": 1
+    },
+    {
+      "id": "convex-optimization",
+      "group": 3
+    },
+    {
+      "id": "pde",
+      "group": 3
+    },
+    {
+      "id": "improper-integrals",
+      "group": 3
+    },
+    {
+      "id": "convex-analysis",
+      "group": 3
+    },
+    {
+      "id": "propositional-calculus",
+      "group": 4
+    },
+    {
+      "id": "lp-spaces",
+      "group": 3
+    },
+    {
+      "id": "stochastic-calculus",
+      "group": 0
+    },
+    {
+      "id": "sobolev-spaces",
+      "group": 3
+    },
+    {
+      "id": "homology-cohomology",
+      "group": 3
+    },
+    {
+      "id": "power-series",
+      "group": 3
+    },
+    {
+      "id": "normal-distribution",
+      "group": 0
+    },
+    {
+      "id": "vectors",
+      "group": 2
+    },
+    {
+      "id": "complex-numbers",
+      "group": 3
+    },
+    {
+      "id": "markov-chains",
+      "group": 0
+    },
+    {
+      "id": "indefinite-integrals",
+      "group": 3
+    },
+    {
+      "id": "reference-request",
+      "group": 8
+    },
+    {
+      "id": "soft-question",
+      "group": 8
+    },
+    {
+      "id": "contour-integration",
+      "group": 3
+    },
+    {
+      "id": "book-recommendation",
+      "group": 8
+    },
+    {
+      "id": "residue-calculus",
+      "group": 3
+    },
+    {
+      "id": "proof-writing",
+      "group": 3
+    },
+    {
+      "id": "inner-product-space",
+      "group": 2
+    },
+    {
+      "id": "model-theory",
+      "group": 4
+    },
+    {
+      "id": "algebraic-curves",
+      "group": 1
+    },
+    {
+      "id": "statistical-inference",
+      "group": 0
+    },
+    {
+      "id": "analytic-geometry",
+      "group": 2
+    }
 ],
 "links":[
-  {"source":"integration","target":"definite-integrals","weight":5117},
-  {"source":"real-analysis","target":"analysis","weight":7187},
-  {"source":"real-analysis","target":"integration","weight":4064},
-  {"source":"real-analysis","target":"calculus","weight":8267},
-  {"source":"real-analysis","target":"measure-theory","weight":5381},
-  {"source":"real-analysis","target":"sequences-and-series","weight":6397},
-  {"source":"sequences-and-series","target":"real-analysis","weight":6397},
-  {"source":"probability","target":"probability-distributions","weight":6100},
-  {"source":"probability","target":"probability-theory","weight":6532},
-  {"source":"probability","target":"statistics","weight":6069},
-  {"source":"group-theory","target":"finite-groups","weight":4986},
-  {"source":"matrices","target":"linear-algebra","weight":13707},
-  {"source":"linear-algebra","target":"vector-spaces","weight":4528},
-  {"source":"derivatives","target":"calculus","weight":5583},
-  {"source":"calculus","target":"integration","weight":11821},
-  {"source":"calculus","target":"limits","weight":7086},
-  {"source":"calculus","target":"sequences-and-series","weight":5186},
-  {"source":"ring-theory","target":"abstract-algebra","weight":5991},
-  {"source":"finite-groups","target":"group-theory","weight":4986},
-  {"source":"abstract-algebra","target":"ring-theory","weight":5991},
-  {"source":"abstract-algebra","target":"group-theory","weight":10188},
-  {"source":"probability-theory","target":"probability","weight":6532}
-]}
+  {
+    "source": "binomial-coefficients",
+    "target": "combinatorics",
+    "value": 1296
+  },
+  {
+    "source": "polynomials",
+    "target": "abstract-algebra",
+    "value": 1942
+  },
+  {
+    "source": "measure-theory",
+    "target": "probability",
+    "value": 1029
+  },
+  {
+    "source": "complex-analysis",
+    "target": "analysis",
+    "value": 1332
+  },
+  {
+    "source": "group-theory",
+    "target": "finite-groups",
+    "value": 4986
+  },
+  {
+    "source": "geometry",
+    "target": "euclidean-geometry",
+    "value": 1365
+  },
+  {
+    "source": "sequences-and-series",
+    "target": "limits",
+    "value": 2964
+  },
+  {
+    "source": "real-analysis",
+    "target": "integration",
+    "value": 4064
+  },
+  {
+    "source": "first-order-logic",
+    "target": "logic",
+    "value": 820
+  },
+  {
+    "source": "probability-distributions",
+    "target": "random-variables",
+    "value": 915
+  },
+  {
+    "source": "probability-distributions",
+    "target": "probability",
+    "value": 6100
+  },
+  {
+    "source": "random-variables",
+    "target": "probability",
+    "value": 2281
+  },
+  {
+    "source": "trigonometry",
+    "target": "calculus",
+    "value": 1867
+  },
+  {
+    "source": "optimization",
+    "target": "calculus",
+    "value": 1047
+  },
+  {
+    "source": "algebraic-geometry",
+    "target": "commutative-algebra",
+    "value": 1592
+  },
+  {
+    "source": "calculus",
+    "target": "differential-equations",
+    "value": 2549
+  },
+  {
+    "source": "linear-algebra",
+    "target": "vector-spaces",
+    "value": 4528
+  },
+  {
+    "source": "lie-groups",
+    "target": "lie-algebras",
+    "value": 1105
+  },
+  {
+    "source": "definite-integrals",
+    "target": "integration",
+    "value": 5117
+  },
+  {
+    "source": "real-analysis",
+    "target": "lebesgue-integral",
+    "value": 1343
+  },
+  {
+    "source": "integration",
+    "target": "differential-equations",
+    "value": 862
+  },
+  {
+    "source": "stochastic-processes",
+    "target": "probability-theory",
+    "value": 1976
+  },
+  {
+    "source": "real-analysis",
+    "target": "limits",
+    "value": 3519
+  },
+  {
+    "source": "functions",
+    "target": "elementary-set-theory",
+    "value": 1073
+  },
+  {
+    "source": "derivatives",
+    "target": "integration",
+    "value": 1019
+  },
+  {
+    "source": "brownian-motion",
+    "target": "stochastic-processes",
+    "value": 839
+  },
+  {
+    "source": "ideals",
+    "target": "ring-theory",
+    "value": 1304
+  },
+  {
+    "source": "measure-theory",
+    "target": "probability-theory",
+    "value": 2302
+  },
+  {
+    "source": "predicate-logic",
+    "target": "logic",
+    "value": 981
+  },
+  {
+    "source": "abstract-algebra",
+    "target": "number-theory",
+    "value": 930
+  },
+  {
+    "source": "convergence",
+    "target": "calculus",
+    "value": 1326
+  },
+  {
+    "source": "algebra-precalculus",
+    "target": "inequality",
+    "value": 1145
+  },
+  {
+    "source": "geometry",
+    "target": "calculus",
+    "value": 850
+  },
+  {
+    "source": "linear-algebra",
+    "target": "linear-transformations",
+    "value": 1727
+  },
+  {
+    "source": "polynomials",
+    "target": "roots",
+    "value": 1047
+  },
+  {
+    "source": "modular-arithmetic",
+    "target": "elementary-number-theory",
+    "value": 1506
+  },
+  {
+    "source": "probability",
+    "target": "combinatorics",
+    "value": 3220
+  },
+  {
+    "source": "differential-topology",
+    "target": "differential-geometry",
+    "value": 1298
+  },
+  {
+    "source": "sequences-and-series",
+    "target": "calculus",
+    "value": 5186
+  },
+  {
+    "source": "algebraic-topology",
+    "target": "homotopy-theory",
+    "value": 1055
+  },
+  {
+    "source": "complex-analysis",
+    "target": "calculus",
+    "value": 1012
+  },
+  {
+    "source": "real-analysis",
+    "target": "inequality",
+    "value": 1273
+  },
+  {
+    "source": "continuity",
+    "target": "general-topology",
+    "value": 887
+  },
+  {
+    "source": "combinations",
+    "target": "permutations",
+    "value": 962
+  },
+  {
+    "source": "linear-algebra",
+    "target": "functional-analysis",
+    "value": 987
+  },
+  {
+    "source": "hilbert-spaces",
+    "target": "functional-analysis",
+    "value": 1984
+  },
+  {
+    "source": "inequality",
+    "target": "calculus",
+    "value": 1046
+  },
+  {
+    "source": "real-analysis",
+    "target": "proof-verification",
+    "value": 1806
+  },
+  {
+    "source": "number-theory",
+    "target": "combinatorics",
+    "value": 904
+  },
+  {
+    "source": "abstract-algebra",
+    "target": "abelian-groups",
+    "value": 805
+  },
+  {
+    "source": "connectedness",
+    "target": "general-topology",
+    "value": 839
+  },
+  {
+    "source": "derivatives",
+    "target": "multivariable-calculus",
+    "value": 935
+  },
+  {
+    "source": "sequences-and-series",
+    "target": "analysis",
+    "value": 1724
+  },
+  {
+    "source": "real-analysis",
+    "target": "complex-analysis",
+    "value": 1167
+  },
+  {
+    "source": "matrix-equations",
+    "target": "matrices",
+    "value": 869
+  },
+  {
+    "source": "group-theory",
+    "target": "permutations",
+    "value": 1013
+  },
+  {
+    "source": "manifolds",
+    "target": "differential-geometry",
+    "value": 1503
+  },
+  {
+    "source": "extension-field",
+    "target": "field-theory",
+    "value": 1072
+  },
+  {
+    "source": "banach-spaces",
+    "target": "functional-analysis",
+    "value": 2030
+  },
+  {
+    "source": "differential-geometry",
+    "target": "riemannian-geometry",
+    "value": 1607
+  },
+  {
+    "source": "matrices",
+    "target": "determinant",
+    "value": 1396
+  },
+  {
+    "source": "algebra-precalculus",
+    "target": "functions",
+    "value": 1050
+  },
+  {
+    "source": "general-topology",
+    "target": "algebraic-topology",
+    "value": 1966
+  },
+  {
+    "source": "probability-theory",
+    "target": "statistics",
+    "value": 1252
+  },
+  {
+    "source": "linear-algebra",
+    "target": "numerical-linear-algebra",
+    "value": 865
+  },
+  {
+    "source": "algebraic-geometry",
+    "target": "schemes",
+    "value": 801
+  },
+  {
+    "source": "prime-numbers",
+    "target": "number-theory",
+    "value": 2366
+  },
+  {
+    "source": "measure-theory",
+    "target": "lebesgue-measure",
+    "value": 1917
+  },
+  {
+    "source": "real-analysis",
+    "target": "sequences-and-series",
+    "value": 6397
+  },
+  {
+    "source": "integration",
+    "target": "limits",
+    "value": 856
+  },
+  {
+    "source": "metric-spaces",
+    "target": "general-topology",
+    "value": 2465
+  },
+  {
+    "source": "real-analysis",
+    "target": "general-topology",
+    "value": 3414
+  },
+  {
+    "source": "integration",
+    "target": "calculus",
+    "value": 11821
+  },
+  {
+    "source": "measure-theory",
+    "target": "functional-analysis",
+    "value": 1099
+  },
+  {
+    "source": "integration",
+    "target": "analysis",
+    "value": 1316
+  },
+  {
+    "source": "sequences-and-series",
+    "target": "convergence",
+    "value": 3877
+  },
+  {
+    "source": "operator-theory",
+    "target": "functional-analysis",
+    "value": 2599
+  },
+  {
+    "source": "diophantine-equations",
+    "target": "number-theory",
+    "value": 1061
+  },
+  {
+    "source": "probability",
+    "target": "expectation",
+    "value": 1544
+  },
+  {
+    "source": "trigonometry",
+    "target": "geometry",
+    "value": 1339
+  },
+  {
+    "source": "taylor-expansion",
+    "target": "calculus",
+    "value": 1008
+  },
+  {
+    "source": "real-analysis",
+    "target": "differential-equations",
+    "value": 849
+  },
+  {
+    "source": "normed-spaces",
+    "target": "functional-analysis",
+    "value": 1025
+  },
+  {
+    "source": "discrete-mathematics",
+    "target": "graph-theory",
+    "value": 1068
+  },
+  {
+    "source": "graph-theory",
+    "target": "combinatorics",
+    "value": 1622
+  },
+  {
+    "source": "real-analysis",
+    "target": "analysis",
+    "value": 7187
+  },
+  {
+    "source": "sequences-and-series",
+    "target": "complex-analysis",
+    "value": 815
+  },
+  {
+    "source": "fourier-series",
+    "target": "fourier-analysis",
+    "value": 967
+  },
+  {
+    "source": "abstract-algebra",
+    "target": "commutative-algebra",
+    "value": 2285
+  },
+  {
+    "source": "compactness",
+    "target": "general-topology",
+    "value": 1498
+  },
+  {
+    "source": "geometry",
+    "target": "triangle",
+    "value": 1343
+  },
+  {
+    "source": "geometry",
+    "target": "circle",
+    "value": 1215
+  },
+  {
+    "source": "continuity",
+    "target": "calculus",
+    "value": 932
+  },
+  {
+    "source": "algebraic-number-theory",
+    "target": "number-theory",
+    "value": 1029
+  },
+  {
+    "source": "analysis",
+    "target": "limits",
+    "value": 884
+  },
+  {
+    "source": "galois-theory",
+    "target": "field-theory",
+    "value": 1245
+  },
+  {
+    "source": "trigonometry",
+    "target": "integration",
+    "value": 909
+  },
+  {
+    "source": "real-analysis",
+    "target": "derivatives",
+    "value": 1882
+  },
+  {
+    "source": "probability",
+    "target": "statistics",
+    "value": 6069
+  },
+  {
+    "source": "convergence",
+    "target": "limits",
+    "value": 891
+  },
+  {
+    "source": "group-theory",
+    "target": "representation-theory",
+    "value": 894
+  },
+  {
+    "source": "real-analysis",
+    "target": "calculus",
+    "value": 8267
+  },
+  {
+    "source": "eigenvalues-eigenvectors",
+    "target": "matrices",
+    "value": 2332
+  },
+  {
+    "source": "sequences-and-series",
+    "target": "summation",
+    "value": 1439
+  },
+  {
+    "source": "definite-integrals",
+    "target": "calculus",
+    "value": 3354
+  },
+  {
+    "source": "real-analysis",
+    "target": "convergence",
+    "value": 2505
+  },
+  {
+    "source": "calculus",
+    "target": "limits",
+    "value": 7086
+  },
+  {
+    "source": "calculus",
+    "target": "analysis",
+    "value": 2904
+  },
+  {
+    "source": "ring-theory",
+    "target": "modules",
+    "value": 903
+  },
+  {
+    "source": "linear-algebra",
+    "target": "geometry",
+    "value": 1156
+  },
+  {
+    "source": "ideals",
+    "target": "abstract-algebra",
+    "value": 1544
+  },
+  {
+    "source": "general-topology",
+    "target": "functional-analysis",
+    "value": 1227
+  },
+  {
+    "source": "linear-algebra",
+    "target": "polynomials",
+    "value": 851
+  },
+  {
+    "source": "modular-arithmetic",
+    "target": "number-theory",
+    "value": 874
+  },
+  {
+    "source": "elementary-number-theory",
+    "target": "divisibility",
+    "value": 1452
+  },
+  {
+    "source": "group-theory",
+    "target": "abstract-algebra",
+    "value": 10188
+  },
+  {
+    "source": "optimization",
+    "target": "convex-optimization",
+    "value": 935
+  },
+  {
+    "source": "pde",
+    "target": "functional-analysis",
+    "value": 1225
+  },
+  {
+    "source": "probability",
+    "target": "stochastic-processes",
+    "value": 1740
+  },
+  {
+    "source": "definite-integrals",
+    "target": "improper-integrals",
+    "value": 832
+  },
+  {
+    "source": "general-topology",
+    "target": "analysis",
+    "value": 1166
+  },
+  {
+    "source": "discrete-mathematics",
+    "target": "combinatorics",
+    "value": 2376
+  },
+  {
+    "source": "diophantine-equations",
+    "target": "elementary-number-theory",
+    "value": 890
+  },
+  {
+    "source": "vector-spaces",
+    "target": "matrices",
+    "value": 810
+  },
+  {
+    "source": "real-analysis",
+    "target": "functional-analysis",
+    "value": 3782
+  },
+  {
+    "source": "random-variables",
+    "target": "probability-theory",
+    "value": 1204
+  },
+  {
+    "source": "algebra-precalculus",
+    "target": "polynomials",
+    "value": 1157
+  },
+  {
+    "source": "measure-theory",
+    "target": "lebesgue-integral",
+    "value": 1390
+  },
+  {
+    "source": "probability",
+    "target": "probability-theory",
+    "value": 6532
+  },
+  {
+    "source": "complex-analysis",
+    "target": "integration",
+    "value": 1588
+  },
+  {
+    "source": "convex-analysis",
+    "target": "convex-optimization",
+    "value": 820
+  },
+  {
+    "source": "analysis",
+    "target": "functional-analysis",
+    "value": 1893
+  },
+  {
+    "source": "permutations",
+    "target": "combinatorics",
+    "value": 1982
+  },
+  {
+    "source": "probability-distributions",
+    "target": "statistics",
+    "value": 1962
+  },
+  {
+    "source": "propositional-calculus",
+    "target": "logic",
+    "value": 1505
+  },
+  {
+    "source": "linear-algebra",
+    "target": "matrices",
+    "value": 13707
+  },
+  {
+    "source": "multivariable-calculus",
+    "target": "calculus",
+    "value": 3433
+  },
+  {
+    "source": "linear-algebra",
+    "target": "eigenvalues-eigenvectors",
+    "value": 3374
+  },
+  {
+    "source": "abstract-algebra",
+    "target": "galois-theory",
+    "value": 1402
+  },
+  {
+    "source": "lp-spaces",
+    "target": "functional-analysis",
+    "value": 883
+  },
+  {
+    "source": "abstract-algebra",
+    "target": "modules",
+    "value": 2413
+  },
+  {
+    "source": "stochastic-calculus",
+    "target": "stochastic-processes",
+    "value": 1213
+  },
+  {
+    "source": "abstract-algebra",
+    "target": "finite-groups",
+    "value": 2767
+  },
+  {
+    "source": "representation-theory",
+    "target": "abstract-algebra",
+    "value": 855
+  },
+  {
+    "source": "pde",
+    "target": "sobolev-spaces",
+    "value": 862
+  },
+  {
+    "source": "real-analysis",
+    "target": "metric-spaces",
+    "value": 1603
+  },
+  {
+    "source": "prime-numbers",
+    "target": "elementary-number-theory",
+    "value": 1552
+  },
+  {
+    "source": "integration",
+    "target": "improper-integrals",
+    "value": 1820
+  },
+  {
+    "source": "real-analysis",
+    "target": "measure-theory",
+    "value": 5381
+  },
+  {
+    "source": "homology-cohomology",
+    "target": "algebraic-topology",
+    "value": 1173
+  },
+  {
+    "source": "real-analysis",
+    "target": "lebesgue-measure",
+    "value": 1229
+  },
+  {
+    "source": "abstract-algebra",
+    "target": "algebraic-geometry",
+    "value": 803
+  },
+  {
+    "source": "algebra-precalculus",
+    "target": "trigonometry",
+    "value": 1437
+  },
+  {
+    "source": "pde",
+    "target": "real-analysis",
+    "value": 819
+  },
+  {
+    "source": "measure-theory",
+    "target": "integration",
+    "value": 1050
+  },
+  {
+    "source": "sequences-and-series",
+    "target": "power-series",
+    "value": 1096
+  },
+  {
+    "source": "algebra-precalculus",
+    "target": "calculus",
+    "value": 1975
+  },
+  {
+    "source": "measure-theory",
+    "target": "analysis",
+    "value": 1137
+  },
+  {
+    "source": "linear-algebra",
+    "target": "calculus",
+    "value": 951
+  },
+  {
+    "source": "probability",
+    "target": "normal-distribution",
+    "value": 1012
+  },
+  {
+    "source": "sobolev-spaces",
+    "target": "functional-analysis",
+    "value": 1083
+  },
+  {
+    "source": "vectors",
+    "target": "linear-algebra",
+    "value": 1044
+  },
+  {
+    "source": "abstract-algebra",
+    "target": "field-theory",
+    "value": 3093
+  },
+  {
+    "source": "complex-analysis",
+    "target": "complex-numbers",
+    "value": 2112
+  },
+  {
+    "source": "markov-chains",
+    "target": "probability",
+    "value": 823
+  },
+  {
+    "source": "calculus",
+    "target": "indefinite-integrals",
+    "value": 1291
+  },
+  {
+    "source": "pde",
+    "target": "differential-equations",
+    "value": 1332
+  },
+  {
+    "source": "reference-request",
+    "target": "soft-question",
+    "value": 903
+  },
+  {
+    "source": "real-analysis",
+    "target": "continuity",
+    "value": 2555
+  },
+  {
+    "source": "abstract-algebra",
+    "target": "extension-field",
+    "value": 973
+  },
+  {
+    "source": "linear-algebra",
+    "target": "determinant",
+    "value": 1575
+  },
+  {
+    "source": "group-theory",
+    "target": "abelian-groups",
+    "value": 1107
+  },
+  {
+    "source": "complex-analysis",
+    "target": "contour-integration",
+    "value": 1148
+  },
+  {
+    "source": "reference-request",
+    "target": "book-recommendation",
+    "value": 860
+  },
+  {
+    "source": "complex-analysis",
+    "target": "residue-calculus",
+    "value": 830
+  },
+  {
+    "source": "abstract-algebra",
+    "target": "ring-theory",
+    "value": 5991
+  },
+  {
+    "source": "proof-verification",
+    "target": "proof-writing",
+    "value": 1042
+  },
+  {
+    "source": "linear-algebra",
+    "target": "inner-product-space",
+    "value": 920
+  },
+  {
+    "source": "real-analysis",
+    "target": "multivariable-calculus",
+    "value": 1619
+  },
+  {
+    "source": "model-theory",
+    "target": "logic",
+    "value": 885
+  },
+  {
+    "source": "ring-theory",
+    "target": "commutative-algebra",
+    "value": 1514
+  },
+  {
+    "source": "commutative-algebra",
+    "target": "modules",
+    "value": 820
+  },
+  {
+    "source": "linear-algebra",
+    "target": "abstract-algebra",
+    "value": 2043
+  },
+  {
+    "source": "functions",
+    "target": "calculus",
+    "value": 2129
+  },
+  {
+    "source": "combinations",
+    "target": "combinatorics",
+    "value": 1259
+  },
+  {
+    "source": "real-analysis",
+    "target": "functions",
+    "value": 1608
+  },
+  {
+    "source": "algebraic-geometry",
+    "target": "algebraic-curves",
+    "value": 904
+  },
+  {
+    "source": "multivariable-calculus",
+    "target": "integration",
+    "value": 2208
+  },
+  {
+    "source": "derivatives",
+    "target": "calculus",
+    "value": 5583
+  },
+  {
+    "source": "probability-distributions",
+    "target": "probability-theory",
+    "value": 2809
+  },
+  {
+    "source": "integration",
+    "target": "indefinite-integrals",
+    "value": 1732
+  },
+  {
+    "source": "elementary-number-theory",
+    "target": "number-theory",
+    "value": 3092
+  },
+  {
+    "source": "statistics",
+    "target": "statistical-inference",
+    "value": 922
+  },
+  {
+    "source": "calculus",
+    "target": "improper-integrals",
+    "value": 1201
+  },
+  {
+    "source": "geometry",
+    "target": "analytic-geometry",
+    "value": 809
+  },
+  {
+    "source": "discrete-mathematics",
+    "target": "elementary-set-theory",
+    "value": 893
+  }
+]
+}
