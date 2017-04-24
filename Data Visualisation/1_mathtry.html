@@ -4,6 +4,7 @@
     .links line {
         stroke: #999;
         stroke-opacity: 0.6;
+        stroke-width: 1.5px;
     }
 
     .nodes circle {
@@ -40,10 +41,9 @@
             .data(graph.links)
             .enter().append("line")
             .attr("stroke-width", function(d) { return Math.sqrt(d.value); })
-            .style("marker-end", "url(#suit)");
+            .style("stroke", function(d) { return color(d.color);});
 
-        var node =
-            svg.append("g")
+        var node = svg.append("g")
             .attr("class", "nodes")
             .selectAll("circle")
             .data(graph.nodes)
