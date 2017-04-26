@@ -106,25 +106,20 @@ public class MathPairs {
             }
         }
 
-        // count the total count of the first element in each set in ConMap
+        // count the total count of the first element in each set in MTagCombo
         Map<String, Integer> Tag_1_Count_Map = new HashMap<>();
 
         for (Set s : ConMap.keySet()) {
             String tag_1 = (String) s.iterator().next();
             int Count1 = 0;
 
-            for (String k : OuterMap.keySet()) {
-                if (!tag_1.equals(k)) {
-                    if (OuterMap.get(k).containsKey(tag_1)) {
-                        Count1 = Count1 + OuterMap.get(k).get(tag_1);
+            for (int i = 0; i < Combo_Tag.size(); i ++){
+                for (int j = 0; j < Combo_Tag.get(i).length; j ++){
+                    if (Combo_Tag.get(i)[j].equals(tag_1)){
+                        Count1 ++;
                     }
-                }else {
-                    for (String ik : OuterMap.get(tag_1).keySet()) {
-                    Count1 = Count1 + OuterMap.get(tag_1).get(ik);
                 }
-
             }
-        }
 
         Tag_1_Count_Map.put(tag_1, Count1);
         }
@@ -135,8 +130,9 @@ public class MathPairs {
             String tag_1 = (String) s.iterator().next();
 
             cv = (double) ConMap.get(s) / Tag_1_Count_Map.get(tag_1);
-            if (cv > 0.1){
-                System.out.println(s + "cv is " + cv);
+            if (cv > 0.5){
+                System.out.printf(s + "cv is " + "%.3f", cv);
+                System.out.println("\n");
             }
 
             }
