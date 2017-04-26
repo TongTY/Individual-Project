@@ -2,7 +2,8 @@
 This repository is used to record the progress of COMP4560 project.
 
 ## What's new this week:
-1. Individual-Project/MathPairs_Java/MathPairs.java: the final version of the algorithm 
+1. Individual-Project/MathPairs_Java/MathPairs.java: the final version of the algorithm
+2. Individual-Project/MathPairs_Java/Result:new results based on sv=0.5% and cv=50% and 10% were added
 
 
 ## Files:
