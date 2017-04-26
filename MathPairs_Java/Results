@@ -1,219 +1,506 @@
-### support-value = 5%:
-----------------------
-[group-theory, finite-groups]:4986
-[real-analysis, integration]:4064
-[probability-distributions, probability]:6100
-[linear-algebra, vector-spaces]:4528
-[definite-integrals, integration]:5117
-[sequences-and-series, calculus]:5186
-[real-analysis, sequences-and-series]:6397
-[integration, calculus]:11821
-[real-analysis, analysis]:7187
-[probability, statistics]:6069
-[real-analysis, calculus]:8267
-[calculus, limits]:7086
-[group-theory, abstract-algebra]:10188
-[probability, probability-theory]:6532
-[linear-algebra, matrices]:13707
-[real-analysis, measure-theory]:5381
-[abstract-algebra, ring-theory]:5991
-[derivatives, calculus]:5583
+### support-value = 0.5% && confidence-value = 50%:
+----------------------------------------------------
+[differential-topology, differential-geometry]cv is 0.503
 
-### support-value = 1%:
-----------------------
-[binomial-coefficients, combinatorics]:1296
-[polynomials, abstract-algebra]:1942
-[measure-theory, probability]:1029
-[complex-analysis, analysis]:1332
-[group-theory, finite-groups]:4986
-[geometry, euclidean-geometry]:1365
-[sequences-and-series, limits]:2964
-[real-analysis, integration]:4064
-[first-order-logic, logic]:820
-[probability-distributions, random-variables]:915
-[probability-distributions, probability]:6100
-[random-variables, probability]:2281
-[trigonometry, calculus]:1867
-[optimization, calculus]:1047
-[algebraic-geometry, commutative-algebra]:1592
-[calculus, differential-equations]:2549
-[linear-algebra, vector-spaces]:4528
-[lie-groups, lie-algebras]:1105
-[definite-integrals, integration]:5117
-[real-analysis, lebesgue-integral]:1343
-[integration, differential-equations]:862
-[stochastic-processes, probability-theory]:1976
-[real-analysis, limits]:3519
-[functions, elementary-set-theory]:1073
-[derivatives, integration]:1019
-[brownian-motion, stochastic-processes]:839
-[ideals, ring-theory]:1304
-[measure-theory, probability-theory]:2302
-[predicate-logic, logic]:981
-[abstract-algebra, number-theory]:930
-[convergence, calculus]:1326
-[algebra-precalculus, inequality]:1145
-[geometry, calculus]:850
-[linear-algebra, linear-transformations]:1727
-[polynomials, roots]:1047
-[modular-arithmetic, elementary-number-theory]:1506
-[probability, combinatorics]:3220
-[differential-topology, differential-geometry]:1298
-[sequences-and-series, calculus]:5186
-[algebraic-topology, homotopy-theory]:1055
-[complex-analysis, calculus]:1012
-[real-analysis, inequality]:1273
-[continuity, general-topology]:887
-[combinations, permutations]:962
-[linear-algebra, functional-analysis]:987
-[hilbert-spaces, functional-analysis]:1984
-[inequality, calculus]:1046
-[real-analysis, proof-verification]:1806
-[number-theory, combinatorics]:904
-[abstract-algebra, abelian-groups]:805
-[connectedness, general-topology]:839
-[derivatives, multivariable-calculus]:935
-[sequences-and-series, analysis]:1724
-[real-analysis, complex-analysis]:1167
-[matrix-equations, matrices]:869
-[group-theory, permutations]:1013
-[manifolds, differential-geometry]:1503
-[extension-field, field-theory]:1072
-[banach-spaces, functional-analysis]:2030
-[differential-geometry, riemannian-geometry]:1607
-[matrices, determinant]:1396
-[algebra-precalculus, functions]:1050
-[general-topology, algebraic-topology]:1966
-[probability-theory, statistics]:1252
-[linear-algebra, numerical-linear-algebra]:865
-[algebraic-geometry, schemes]:801
-[prime-numbers, number-theory]:2366
-[measure-theory, lebesgue-measure]:1917
-[real-analysis, sequences-and-series]:6397
-[integration, limits]:856
-[metric-spaces, general-topology]:2465
-[real-analysis, general-topology]:3414
-[integration, calculus]:11821
-[measure-theory, functional-analysis]:1099
-[integration, analysis]:1316
-[sequences-and-series, convergence]:3877
-[operator-theory, functional-analysis]:2599
-[diophantine-equations, number-theory]:1061
-[probability, expectation]:1544
-[trigonometry, geometry]:1339
-[taylor-expansion, calculus]:1008
-[real-analysis, differential-equations]:849
-[normed-spaces, functional-analysis]:1025
-[discrete-mathematics, graph-theory]:1068
-[graph-theory, combinatorics]:1622
-[real-analysis, analysis]:7187
-[sequences-and-series, complex-analysis]:815
-[fourier-series, fourier-analysis]:967
-[abstract-algebra, commutative-algebra]:2285
-[compactness, general-topology]:1498
-[geometry, triangle]:1343
-[geometry, circle]:1215
-[continuity, calculus]:932
-[algebraic-number-theory, number-theory]:1029
-[analysis, limits]:884
-[galois-theory, field-theory]:1245
-[trigonometry, integration]:909
-[real-analysis, derivatives]:1882
-[probability, statistics]:6069
-[convergence, limits]:891
-[group-theory, representation-theory]:894
-[real-analysis, calculus]:8267
-[eigenvalues-eigenvectors, matrices]:2332
-[sequences-and-series, summation]:1439
-[definite-integrals, calculus]:3354
-[real-analysis, convergence]:2505
-[calculus, limits]:7086
-[calculus, analysis]:2904
-[ring-theory, modules]:903
-[linear-algebra, geometry]:1156
-[ideals, abstract-algebra]:1544
-[general-topology, functional-analysis]:1227
-[linear-algebra, polynomials]:851
-[modular-arithmetic, number-theory]:874
-[elementary-number-theory, divisibility]:1452
-[group-theory, abstract-algebra]:10188
-[optimization, convex-optimization]:935
-[pde, functional-analysis]:1225
-[probability, stochastic-processes]:1740
-[definite-integrals, improper-integrals]:832
-[general-topology, analysis]:1166
-[discrete-mathematics, combinatorics]:2376
-[diophantine-equations, elementary-number-theory]:890
-[vector-spaces, matrices]:810
-[real-analysis, functional-analysis]:3782
-[random-variables, probability-theory]:1204
-[algebra-precalculus, polynomials]:1157
-[measure-theory, lebesgue-integral]:1390
-[probability, probability-theory]:6532
-[complex-analysis, integration]:1588
-[convex-analysis, convex-optimization]:820
-[analysis, functional-analysis]:1893
-[permutations, combinatorics]:1982
-[probability-distributions, statistics]:1962
-[propositional-calculus, logic]:1505
-[linear-algebra, matrices]:13707
-[multivariable-calculus, calculus]:3433
-[linear-algebra, eigenvalues-eigenvectors]:3374
-[abstract-algebra, galois-theory]:1402
-[lp-spaces, functional-analysis]:883
-[abstract-algebra, modules]:2413
-[stochastic-calculus, stochastic-processes]:1213
-[abstract-algebra, finite-groups]:2767
-[representation-theory, abstract-algebra]:855
-[pde, sobolev-spaces]:862
-[real-analysis, metric-spaces]:1603
-[prime-numbers, elementary-number-theory]:1552
-[integration, improper-integrals]:1820
-[real-analysis, measure-theory]:5381
-[homology-cohomology, algebraic-topology]:1173
-[real-analysis, lebesgue-measure]:1229
-[abstract-algebra, algebraic-geometry]:803
-[algebra-precalculus, trigonometry]:1437
-[pde, real-analysis]:819
-[measure-theory, integration]:1050
-[sequences-and-series, power-series]:1096
-[algebra-precalculus, calculus]:1975
-[measure-theory, analysis]:1137
-[linear-algebra, calculus]:951
-[probability, normal-distribution]:1012
-[sobolev-spaces, functional-analysis]:1083
-[vectors, linear-algebra]:1044
-[abstract-algebra, field-theory]:3093
-[complex-analysis, complex-numbers]:2112
-[markov-chains, probability]:823
-[calculus, indefinite-integrals]:1291
-[pde, differential-equations]:1332
-[reference-request, soft-question]:903
-[real-analysis, continuity]:2555
-[abstract-algebra, extension-field]:973
-[linear-algebra, determinant]:1575
-[group-theory, abelian-groups]:1107
-[complex-analysis, contour-integration]:1148
-[reference-request, book-recommendation]:860
-[complex-analysis, residue-calculus]:830
-[abstract-algebra, ring-theory]:5991
-[proof-verification, proof-writing]:1042
-[linear-algebra, inner-product-space]:920
-[real-analysis, multivariable-calculus]:1619
-[model-theory, logic]:885
-[ring-theory, commutative-algebra]:1514
-[commutative-algebra, modules]:820
-[linear-algebra, abstract-algebra]:2043
-[functions, calculus]:2129
-[combinations, combinatorics]:1259
-[real-analysis, functions]:1608
-[algebraic-geometry, algebraic-curves]:904
-[multivariable-calculus, integration]:2208
-[derivatives, calculus]:5583
-[probability-distributions, probability-theory]:2809
-[integration, indefinite-integrals]:1732
-[elementary-number-theory, number-theory]:3092
-[statistics, statistical-inference]:922
-[calculus, improper-integrals]:1201
-[geometry, analytic-geometry]:809
-[discrete-mathematics, elementary-set-theory]:893
+[fundamental-groups, algebraic-topology]cv is 0.817
+
+[c-star-algebras, operator-algebras]cv is 0.545
+
+[compactness, general-topology]cv is 0.628
+
+[homology-cohomology, algebraic-topology]cv is 0.623
+
+[derivatives, calculus]cv is 0.500
+
+[cyclic-groups, abstract-algebra]cv is 0.559
+
+[analytic-number-theory, number-theory]cv is 0.509
+
+[sheaf-theory, algebraic-geometry]cv is 0.632
+
+[stochastic-integrals, stochastic-processes]cv is 0.619
+
+[epsilon-delta, limits]cv is 0.546
+
+[martingales, probability-theory]cv is 0.569
+
+[topological-vector-spaces, functional-analysis]cv is 0.663
+
+[combinations, combinatorics]cv is 0.565
+
+[spectral-theory, functional-analysis]cv is 0.540
+
+[matrix-decomposition, matrices]cv is 0.683
+
+[model-theory, logic]cv is 0.678
+
+[first-order-logic, logic]cv is 0.743
+
+[banach-spaces, functional-analysis]cv is 0.772
+
+[banach-algebras, functional-analysis]cv is 0.645
+
+[operator-theory, functional-analysis]cv is 0.707
+
+[stochastic-calculus, stochastic-processes]cv is 0.642
+
+[limits-without-lhopital, calculus]cv is 0.505
+
+[nonlinear-optimization, optimization]cv is 0.633
+
+[stochastic-analysis, stochastic-processes]cv is 0.619
+
+[sobolev-spaces, functional-analysis]cv is 0.519
+
+[operator-algebras, functional-analysis]cv is 0.540
+
+[probability-distributions, probability]cv is 0.644
+
+[predicate-logic, logic]cv is 0.784
+
+[hilbert-spaces, functional-analysis]cv is 0.675
+
+[connectedness, general-topology]cv is 0.713
+
+[definite-integrals, integration]cv is 0.706
+
+[brownian-motion, stochastic-processes]cv is 0.563
+
+[propositional-calculus, logic]cv is 0.858
+
+[random-variables, probability]cv is 0.578
+
+[extension-field, field-theory]cv is 0.638
+
+[smooth-manifolds, differential-geometry]cv is 0.568
+
+[c-star-algebras, functional-analysis]cv is 0.606
+
+[differential-forms, differential-geometry]cv is 0.561
+
+[cyclic-groups, group-theory]cv is 0.704
+
+[ideals, abstract-algebra]cv is 0.598
+
+[matrix-equations, matrices]cv is 0.669
+
+[ideals, ring-theory]cv is 0.505
+
+[normed-spaces, functional-analysis]cv is 0.539
+
+[diagonalization, matrices]cv is 0.552
+
+[limits-without-lhopital, limits]cv is 0.891
+
+[group-theory, abstract-algebra]cv is 0.548
+
+
+### support-value = 0.5% && confidence-value = 10%:
+-----------------------------------------------------
+[definite-integrals, calculus]cv is 0.463
+
+[differential-topology, differential-geometry]cv is 0.503
+
+[manifolds, smooth-manifolds]cv is 0.128
+
+[representation-theory, abstract-algebra]cv is 0.256
+
+[conditional-expectation, probability-theory]cv is 0.472
+
+[real-analysis, calculus]cv is 0.175
+
+[metric-spaces, general-topology]cv is 0.443
+
+[laplace-transform, differential-equations]cv is 0.331
+
+[probability, statistics]cv is 0.199
+
+[induction, discrete-mathematics]cv is 0.194
+
+[real-analysis, measure-theory]cv is 0.114
+
+[measure-theory, lebesgue-integral]cv is 0.109
+
+[markov-chains, probability-theory]cv is 0.228
+
+[algebraic-geometry, algebraic-curves]cv is 0.103
+
+[fourier-analysis, integration]cv is 0.103
+
+[binomial-coefficients, combinatorics]cv is 0.451
+
+[differential-topology, general-topology]cv is 0.172
+
+[vectors, linear-algebra]cv is 0.331
+
+[continuity, limits]cv is 0.108
+
+[galois-theory, field-theory]cv is 0.437
+
+[definite-integrals, real-analysis]cv is 0.103
+
+[continuity, calculus]cv is 0.164
+
+[set-theory, logic]cv is 0.202
+
+[fundamental-groups, algebraic-topology]cv is 0.817
+
+[combinations, probability]cv is 0.180
+
+[volume, integration]cv is 0.426
+
+[c-star-algebras, operator-algebras]cv is 0.545
+
+[probability, probability-theory]cv is 0.214
+
+[multivariable-calculus, integration]cv is 0.193
+
+[exponential-function, calculus]cv is 0.171
+
+[metric-spaces, analysis]cv is 0.101
+
+[algorithms, graph-theory]cv is 0.118
+
+[taylor-expansion, calculus]cv is 0.371
+
+[compactness, general-topology]cv is 0.628
+
+[homology-cohomology, algebraic-topology]cv is 0.623
+
+[stochastic-processes, probability-theory]cv is 0.342
+
+[derivatives, calculus]cv is 0.500
+
+[cyclic-groups, abstract-algebra]cv is 0.559
+
+[trigonometry, integration]cv is 0.101
+
+[polynomials, abstract-algebra]cv is 0.207
+
+[multivariable-calculus, calculus]cv is 0.300
+
+[diophantine-equations, elementary-number-theory]cv is 0.385
+
+[recurrence-relations, combinatorics]cv is 0.144
+
+[polynomials, roots]cv is 0.112
+
+[real-analysis, sequences-and-series]cv is 0.135
+
+[analytic-number-theory, number-theory]cv is 0.509
+
+[proof-verification, proof-writing]cv is 0.107
+
+[sheaf-theory, algebraic-geometry]cv is 0.632
+
+[definite-integrals, improper-integrals]cv is 0.115
+
+[stochastic-integrals, stochastic-processes]cv is 0.619
+
+[general-topology, algebraic-topology]cv is 0.114
+
+[distribution-theory, functional-analysis]cv is 0.377
+
+[epsilon-delta, limits]cv is 0.546
+
+[ring-theory, modules]cv is 0.106
+
+[probability-distributions, probability-theory]cv is 0.296
+
+[complex-analysis, integration]cv is 0.107
+
+[sequences-and-series, convergence]cv is 0.168
+
+[calculus, limits]cv is 0.140
+
+[3d, geometry]cv is 0.411
+
+[combinations, permutations]cv is 0.432
+
+[special-functions, integration]cv is 0.228
+
+[measure-theory, probability-theory]cv is 0.181
+
+[martingales, probability-theory]cv is 0.569
+
+[martingales, stochastic-processes]cv is 0.426
+
+[diophantine-equations, number-theory]cv is 0.459
+
+[topological-vector-spaces, functional-analysis]cv is 0.663
+
+[partitions, combinatorics]cv is 0.474
+
+[combinations, combinatorics]cv is 0.565
+
+[sequences-and-series, calculus]cv is 0.225
+
+[differential-geometry, riemannian-geometry]cv is 0.159
+
+[elementary-number-theory, number-theory]cv is 0.240
+
+[convergence, limits]cv is 0.104
+
+[spectral-theory, functional-analysis]cv is 0.540
+
+[partial-derivative, calculus]cv is 0.274
+
+[matrix-decomposition, matrices]cv is 0.683
+
+[stochastic-calculus, stochastic-integrals]cv is 0.286
+
+[prime-numbers, number-theory]cv is 0.466
+
+[model-theory, logic]cv is 0.678
+
+[contest-math, elementary-number-theory]cv is 0.175
+
+[conic-sections, geometry]cv is 0.363
+
+[first-order-logic, logic]cv is 0.743
+
+[banach-spaces, functional-analysis]cv is 0.772
+
+[banach-algebras, functional-analysis]cv is 0.645
+
+[manifolds, differential-topology]cv is 0.180
+
+[fourier-analysis, functional-analysis]cv is 0.110
+
+[convex-analysis, convex-optimization]cv is 0.285
+
+[education, soft-question]cv is 0.316
+
+[stochastic-calculus, brownian-motion]cv is 0.225
+
+[prime-numbers, elementary-number-theory]cv is 0.306
+
+[complex-analysis, complex-numbers]cv is 0.142
+
+[category-theory, abstract-algebra]cv is 0.189
+
+[stochastic-calculus, probability-theory]cv is 0.281
+
+[factoring, polynomials]cv is 0.355
+
+[numerical-methods, differential-equations]cv is 0.131
+
+[pde, differential-equations]cv is 0.190
+
+[operator-theory, functional-analysis]cv is 0.707
+
+[vectors, vector-spaces]cv is 0.149
+
+[stochastic-calculus, stochastic-processes]cv is 0.642
+
+[markov-chains, markov-process]cv is 0.244
+
+[measure-theory, lebesgue-measure]cv is 0.151
+
+[limits-without-lhopital, calculus]cv is 0.505
+
+[nonlinear-optimization, optimization]cv is 0.633
+
+[vector-spaces, matrices]cv is 0.115
+
+[operator-theory, hilbert-spaces]cv is 0.210
+
+[functions, calculus]cv is 0.175
+
+[linear-transformations, matrices]cv is 0.211
+
+[closed-form, integration]cv is 0.323
+
+[lie-algebras, representation-theory]cv is 0.266
+
+[special-functions, calculus]cv is 0.179
+
+[ring-theory, commutative-algebra]cv is 0.178
+
+[linear-algebra, vector-spaces]cv is 0.118
+
+[binomial-coefficients, summation]cv is 0.242
+
+[stochastic-analysis, stochastic-processes]cv is 0.619
+
+[sobolev-spaces, functional-analysis]cv is 0.519
+
+[finite-fields, field-theory]cv is 0.253
+
+[lie-groups, representation-theory]cv is 0.185
+
+[notation, elementary-set-theory]cv is 0.107
+
+[pde, sobolev-spaces]cv is 0.123
+
+[modular-arithmetic, elementary-number-theory]cv is 0.407
+
+[set-theory, cardinals]cv is 0.149
+
+[pde, functional-analysis]cv is 0.175
+
+[lebesgue-integral, lebesgue-measure]cv is 0.239
+
+[operator-algebras, functional-analysis]cv is 0.540
+
+[markov-chains, stochastic-processes]cv is 0.312
+
+[manifolds, differential-geometry]cv is 0.460
+
+[regression, statistics]cv is 0.483
+
+[trigonometry, geometry]cv is 0.149
+
+[trigonometry, calculus]cv is 0.208
+
+[algebraic-number-theory, number-theory]cv is 0.394
+
+[examples-counterexamples, general-topology]cv is 0.183
+
+[probability, combinatorics]cv is 0.106
+
+[graphing-functions, functions]cv is 0.234
+
+[algebraic-topology, homotopy-theory]cv is 0.152
+
+[volume, calculus]cv is 0.378
+
+[commutative-algebra, modules]cv is 0.133
+
+[expectation, probability-theory]cv is 0.246
+
+[probability-distributions, probability]cv is 0.644
+
+[closed-form, sequences-and-series]cv is 0.269
+
+[continuity, analysis]cv is 0.112
+
+[predicate-logic, logic]cv is 0.784
+
+[hilbert-spaces, functional-analysis]cv is 0.675
+
+[area, geometry]cv is 0.354
+
+[continuity, general-topology]cv is 0.156
+
+[set-theory, axiom-of-choice]cv is 0.148
+
+[normal-distribution, statistics]cv is 0.294
+
+[fourier-series, fourier-analysis]cv is 0.465
+
+[connectedness, general-topology]cv is 0.713
+
+[lie-groups, lie-algebras]cv is 0.427
+
+[manifolds, general-topology]cv is 0.156
+
+[definite-integrals, integration]cv is 0.706
+
+[group-theory, finite-groups]cv is 0.268
+
+[modular-arithmetic, number-theory]cv is 0.236
+
+[extension-field, galois-theory]cv is 0.301
+
+[markov-chains, probability]cv is 0.421
+
+[brownian-motion, stochastic-processes]cv is 0.563
+
+[discrete-mathematics, combinatorics]cv is 0.206
+
+[elementary-number-theory, divisibility]cv is 0.113
+
+[optimization, calculus]cv is 0.147
+
+[probability-distributions, statistics]cv is 0.207
+
+[sequences-and-series, limits]cv is 0.129
+
+[pde, real-analysis]cv is 0.117
+
+[inequality, calculus]cv is 0.117
+
+[contest-math, combinatorics]cv is 0.155
+
+[integration, calculus]cv is 0.432
+
+[abstract-algebra, ring-theory]cv is 0.179
+
+[propositional-calculus, logic]cv is 0.858
+
+[random-variables, probability]cv is 0.578
+
+[extension-field, field-theory]cv is 0.638
+
+[lebesgue-integral, integration]cv is 0.244
+
+[smooth-manifolds, differential-geometry]cv is 0.568
+
+[c-star-algebras, functional-analysis]cv is 0.606
+
+[convergence, calculus]cv is 0.155
+
+[random-variables, statistics]cv is 0.140
+
+[inverse, linear-algebra]cv is 0.248
+
+[graph-theory, combinatorics]cv is 0.232
+
+[analysis, functional-analysis]cv is 0.108
+
+[differential-forms, differential-geometry]cv is 0.561
+
+[closed-form, calculus]cv is 0.342
+
+[brownian-motion, probability-theory]cv is 0.386
+
+[cyclic-groups, group-theory]cv is 0.704
+
+[differential-topology, algebraic-topology]cv is 0.207
+
+[random-variables, probability-theory]cv is 0.305
+
+[linear-algebra, matrices]cv is 0.357
+
+[lp-spaces, functional-analysis]cv is 0.477
+
+[ideals, abstract-algebra]cv is 0.598
+
+[representation-theory, finite-groups]cv is 0.140
+
+[power-series, calculus]cv is 0.215
+
+[eigenvalues-eigenvectors, matrices]cv is 0.463
+
+[vector-analysis, calculus]cv is 0.224
+
+[matrix-equations, matrices]cv is 0.669
+
+[lie-groups, differential-geometry]cv is 0.205
+
+[ideals, ring-theory]cv is 0.505
+
+[normed-spaces, functional-analysis]cv is 0.539
+
+[diagonalization, matrices]cv is 0.552
+
+[algebraic-geometry, commutative-algebra]cv is 0.181
+
+[limits-without-lhopital, limits]cv is 0.891
+
+[inverse, matrices]cv is 0.329
+
+[group-theory, abstract-algebra]cv is 0.548
+
+[optimization, convex-optimization]cv is 0.131
+
+[ideals, commutative-algebra]cv is 0.287
+
+[permutations, combinatorics]cv is 0.439
+
+[convex-analysis, real-analysis]cv is 0.181
+
+[real-analysis, analysis]cv is 0.152
+
+[algebra-precalculus, calculus]cv is 0.133
