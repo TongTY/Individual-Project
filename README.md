@@ -9,7 +9,7 @@ This repository is used to record the progress of COMP4560 project.
 2. Under 'Individual-Project/Data Visualisation/...'<br />
    '2_graph_labels.png' is the graph which has labels.<br />
    '2_graph_v4.html' is the sorce code and I used d3.v4.js instead of d3.v3.js in this code.<br />
-3. Folder 'EnglishPairs' is totallt new. Just stores the same work with MathPairs_Java.
+3. Folder 'EnglishPairs' is totallt new. Just stores the same work as 'MathPairs_Java' does.<br/>
 
 ## Files:
 ### MathPairs_Java:
