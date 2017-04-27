@@ -9,6 +9,7 @@ This repository is used to record the progress of COMP4560 project.
 2. Under 'Individual-Project/Data Visualisation/...'<br />
    '2_graph_labels.png' is the graph which has labels.<br />
    '2_graph_v4.html' is the sorce code and I used d3.v4.js instead of d3.v3.js in this code.<br />
+3. Folder 'EnglishPairs' is totallt new. Just stores the same work with MathPairs_Java.
 
 ## Files:
 ### MathPairs_Java:
@@ -18,9 +19,13 @@ The folder for storing the code and files used in finding association-rule pairs
 3. 'MathPairs.java'is the code for finding out all the association pairs 
 4. 'Results' is used to store the results based on different support values & confident values.
 
+### EnglishPairs:
+1. 'ETagCombo.txt'
+2. 'Results'
+
 ### Data Visualisation:
 This forder is used to store all the files that are relatived to data visualisation.
-1. The files named '1_...' is the outcomes based on support value = 0.05 and confidence value = 0.1 and has no labels yet.
+1. The files named '1_...' is the outcomes based on support value = 0.005 and confidence value = 0.1 and has no labels yet.
 2. The files named '2_...' is based on '1_...' but added labels to the nodes.
 
 ### D3ExerciseFiles:
