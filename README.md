@@ -7,8 +7,8 @@ This repository is used to record the progress of COMP4560 project.
    1.1 'MathPairs.java': the final version of the algorithm<br />
    1.2 'Result':new results based on sv=0.5% and cv=50% and 10% were added<br />
 2. Under 'Individual-Project/Data Visualisation/...'<br />
-   The files named '1_...' is the outcomes based on support value = 0.05 and confidence value = 0.1.<br />
-
+   '2_graph_labels.png' is the graph which has labels.<br />
+   '2_graph_v4.html' is the sorce code and I used d3.v4.js instead of d3.v3.js in this code.<br />
 
 ## Files:
 ### MathPairs_Java:
@@ -24,9 +24,8 @@ The folder for storing the exercises of D3.js.
 
 ### Data Visualisation:
 This forder is used to store all the files that are relatived to data visualisation.
-1. '1_Data.json': the data in this file is based on support value=5%.
-2. '1_Graph.png': the first graph of the data in 1_Data.json.
-3. '1_mathtry.html': the html file.
+1. The files named '1_...' is the outcomes based on support value = 0.05 and confidence value = 0.1 and has no labels yet.
+2. The files named '2_...' is based on '1_...' but added labels to the nodes.
 
 ## Information record for each week:
 (18/04) 
