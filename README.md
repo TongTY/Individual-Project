@@ -18,14 +18,13 @@ The folder for storing the code and files used in finding association-rule pairs
 3. 'MathPairs.java'is the code for finding out all the association pairs 
 4. 'Results' is used to store the results based on different support values & confident values.
 
-
-### D3ExerciseFiles:
-The folder for storing the exercises of D3.js.
-
 ### Data Visualisation:
 This forder is used to store all the files that are relatived to data visualisation.
 1. The files named '1_...' is the outcomes based on support value = 0.05 and confidence value = 0.1 and has no labels yet.
 2. The files named '2_...' is based on '1_...' but added labels to the nodes.
+
+### D3ExerciseFiles:
+The folder for storing the exercises of D3.js.
 
 ## Information record for each week:
 (18/04) 
