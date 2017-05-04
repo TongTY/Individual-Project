@@ -7,8 +7,8 @@ import java.util.*;
  * Created by Tong on 3/5/17.
  */
 public class CountFrequency{
-    public static boolean DESC = true;
-    public static boolean ASC = false;
+    public static boolean DESC = false;
+    public static boolean ASC = true;
 
     public static void main(String[] args) throws Exception {
         List<String> TagNames = new ArrayList<>();
@@ -67,13 +67,17 @@ public class CountFrequency{
             NameFre.put(TagNames.get(i), Frequency);
         }
 
-        // sort the tags based on their frequency
+        // fetch first 50 tags
         Map<String, Integer> sortedMap = sortByComparator(NameFre, DESC);
-        System.out.println(sortedMap);
+       // System.out.println(sortedMap);
+        List<Map.Entry<String, Integer>> first50Tags = new ArrayList<>(sortedMap.entrySet()).subList(0,50);
+        System.out.println(first50Tags);
     }
 
+
+    // sort the tags based on frequency
     private static Map<String, Integer> sortByComparator(Map<String, Integer> unsortMap, final boolean order){
-        List<Map.Entry<String, Integer>> list = new LinkedList<Map.Entry<String, Integer>>(unsortMap.entrySet());
+        List<Map.Entry<String, Integer>> list = new LinkedList<>(unsortMap.entrySet());
 
         Collections.sort(list, new Comparator<Map.Entry<String, Integer>>() {
             @Override
@@ -85,7 +89,7 @@ public class CountFrequency{
                 }
             }
         });
-        Map<String, Integer> sortedMap = new LinkedHashMap<String, Integer>();
+        Map<String, Integer> sortedMap = new LinkedHashMap<>();
         for (Map.Entry<String, Integer> entry : list){
             sortedMap.put(entry.getKey(), entry.getValue());
         }
