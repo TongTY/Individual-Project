@@ -4,6 +4,8 @@ This repository is used to record the progress of COMP4560 project.
 ## What's new this week:
  1. Under 'Individual-Project/Data Visualisation/...'<br />
     1.1 '3_final_sv0.008cv0.09.json' is the final data I will use for visualisation.
+ 2. Under 'MathPair'<br/>
+    1.1 'First50Subset.java'
 
 ## Files:
 ### MathPairs_Java:
