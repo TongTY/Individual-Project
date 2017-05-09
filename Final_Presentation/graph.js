@@ -8,8 +8,8 @@ function featureGraph(){
     var color = d3.scaleOrdinal(d3.schemeCategory20);
 
     var simulation = d3.forceSimulation()
-        .force("link", d3.forceLink().id(function(d){return d.id;}))
-        .force("charge", d3.forceManyBody())
+        .force("link", d3.forceLink().id(function(d){return d.id;}).distance(55).strength(1))
+        .force("charge", d3.forceManyBody().strength(-65))
         .force("center", d3.forceCenter(width / 2, height / 2));
 
     d3.json("data.json", function(error, graph) {
@@ -34,17 +34,29 @@ function featureGraph(){
 
         var node = gnodes.append("circle")
             .attr("class", "nodes")
-            .attr("r", 5)
+            .attr("r", function(d){return d.degree;})
             .style("fill", function(d) { return color(d.group); });
+
+        var circleCoord = function(node, index, num_nodes){
+            var circumference = circle.node().getTotalLength();
+            var pointAtLength = function(l){return circle.node().getPointAtLength(l)};
+            var sectionLength = (circumference)/num_nodes;
+            var position = sectionLength*index+sectionLength/2;
+            return pointAtLength(circumference)
+        }
 
 
         gnodes.append("title")
             .text(function(d) { return d.id; });
 
-        var labels = gnodes.append("text").text(function(d){return d.id;});
-        labels.attr("transform", function(d){return "translate(" + (d.x) + "," + (d.y) + ")";})
+        var labels = gnodes.append("text")
+            .text(function(d){return d.id;});
+
+        labels.attr("transform", function(d){
+            return "translate(" + (d.x) + "," + (d.y) + ")";})
             .style("font", "10px sans-serif")
-            .style("stroke", "gray");
+            .style("font-size", function(d) { return d.degree*1.5-2+'px' })
+            ;
 
 
         simulation
