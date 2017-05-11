@@ -8,6 +8,7 @@ This repository is used to record the progress of COMP4560 project.
  2. Under 'MathPair'<br/>
     1.1 'First50Subset.java'
  3. 'Final_Presentation'.
+    1.1 The 'subGraph' is one example of all sub-graphs.
 
 ## Files:
 
