@@ -3,13 +3,13 @@ import java.io.*;
 import java.util.*;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
+import java.lang.*;
 
 /**
  * Created by Tong on 3/5/17.
  */
 public class CountFrequency{
     public static boolean DESC = false;
-    public static boolean ASC = true;
 
     public static void main(String[] args) throws Exception {
         List<String> TagNames = new ArrayList<>();
@@ -68,18 +68,8 @@ public class CountFrequency{
             NameFre.put(TagNames.get(i), Frequency);
         }
 
-     /*   for (String name : NameFre.keySet()){
-            System.out.println(name + ":" + NameFre.get(name));
-        }*/
-
         // fetch first 50 tags
         Map<String, Integer> sortedMap = sortByComparator(NameFre, DESC);
-        // System.out.println(sortedMap);
-      /*  for (String key : sortedMap.keySet()){
-            System.out.println(key + "," + sortedMap.get(key));
-        }*/
-    //    List<Map.Entry<String, Integer>> first50Tags = new ArrayList<>(sortedMap.entrySet()).subList(0,50);
-   //     System.out.println(first50Tags);
 
         List<String> first50tag = new ArrayList<>();
         int counter = 0;
@@ -89,25 +79,42 @@ public class CountFrequency{
                 counter++;
             }
         }
-       // System.out.println(first50tag);
+     //   System.out.println(sortedMap);
+     //   System.out.println(first50tag); // -- both sortedMap and first50tag are correct
 
         // first 50 sublist
 
         for (int i = 0; i < first50tag.size(); i ++){
-            List<String[]> SubCombo = new ArrayList<>();
+            List<List<String>> SubCombo = new ArrayList<>();
+           // System.out.println(first50tag.get(i));
 
             for (int j = 0; j < Combo_Tag.size(); j ++){
                 for (int o = 0; o < Combo_Tag.get(j).length; o ++){
                     if (Combo_Tag.get(j)[o].equals(first50tag.get(i))){
-                        SubCombo.add(Combo_Tag.get(i));
+                        List<String> tempList = new ArrayList<>();
+
+                        for ( int m = 0; m < Combo_Tag.get(j).length; m ++){
+                                tempList.add(Combo_Tag.get(j)[m]);
+                        } // get the list which contains tagA
+                        SubCombo.add(tempList); // wrong wrong wrong
                     }
                 }
             } // get all tagcombo which has tagA in it
-            System.out.println(SubCombo);
-            System.setOut(new PrintStream(new FileOutputStream("/Users/Tong/Desktop/java/COMP4560/" + first50tag.get(i) + ".txt")));
-            SubCombo.clear();
+
+          //  System.out.print(SubCombo);
+
+            FileOutputStream f = new FileOutputStream("/Users/Tong/Desktop/java/COMP4560/" + first50tag.get(i) + ".txt");
+            System.setOut(new PrintStream(f));
+            SubCombo.stream().forEach(e-> System.out.println(e));
+          //  System.setOut(new PrintStream(new FileOutputStream("/Users/Tong/Desktop/java/COMP4560/" + first50tag.get(i) + ".txt"), true));
+
+
+//            SubCombo.stream().forEach(e -> System.out.println(e));
         }
+
+      // a-> System.out.println(a);
     }
+
 
     // sort the tags based on frequency
     private static Map<String, Integer> sortByComparator(Map<String, Integer> unsortMap, final boolean order){
