@@ -6,8 +6,13 @@ This repository is used to record the progress of COMP4560 project.
     1.1 '3_final_sv0.008cv0.09.json' is the final data I will use for visualisation.
  2. Under 'MathPair'<br/>
     1.1 'First50Subset.java'
+ 3. 'Final_Presentation'.
 
 ## Files:
+
+### Final_Presentation:
+This folder will be used to store the final version of my work.
+
 ### MathPairs_Java:
 The folder for storing the code and files used in finding association-rule pairs of MathDataBase.
 1. 'MTagCombo.txt' is the original data that I used for finding association rules
