@@ -6,7 +6,7 @@ This repository is used to record the progress of COMP4560 project.
  1. Under 'Individual-Project/Data Visualisation/...'<br />
     1.1 '3_final_sv0.008cv0.09.json' is the final data I will use for visualisation.
  2. Under 'MathPair'<br/>
-    1.1 'First50Subset.java'
+    1.1 'First50Subset.java' <br />
     1.2 'subPairs.java' is the code for find out the subset for each tag with high frequency. 
  3. 'Final_Presentation'.
     1.1 The 'subGraph' is one example of all sub-graphs.
