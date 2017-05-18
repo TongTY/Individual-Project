@@ -3,6 +3,8 @@ This repository is used to record the progress of COMP4560 project.
 
 ## What's new this week:
 (18/05)
+1. Under 'Final_Presentation':<br />
+   1.1 LinkWithColor.png shows the final version of the whole graph which will be displayed on the homepage.<br />
 
 ## Files:
 
