@@ -60,7 +60,7 @@ public class MathPairs {
         }
 
         //get undirected pairs:
-        Map<Set, Integer> OneWayPairs= new HashMap<>();
+        Map<Set, Integer> OneWayPairs = new HashMap<>();
 
         for (String okey : OuterMap.keySet()) {
             for (String ikey : OuterMap.get(okey).keySet()) {
@@ -98,7 +98,7 @@ public class MathPairs {
         // if the support value is large enough then store them into a new map.
         Map<Set, Integer> ConMap = new HashMap<>();
 
-        double svc = OneWayPairs.size() * 0.005;
+        double svc = OneWayPairs.size() * 0.007;
         for (Set pair : OneWayPairs.keySet()){
             if (OneWayPairs.get(pair) > svc) {
                 //System.out.println(pair + ":" + OneWayPairs.get(pair));
@@ -106,35 +106,63 @@ public class MathPairs {
             }
         }
 
-        // count the total count of the first element in each set in MTagCombo
-        Map<String, Integer> Tag_1_Count_Map = new HashMap<>();
+        // count the total count of the two elements in each set in MTagCombo
+        Map<String, Integer> Tag_Count_Map = new HashMap<>();
 
         for (Set s : ConMap.keySet()) {
-            String tag_1 = (String) s.iterator().next();
-            int Count1 = 0;
+            Iterator<String> it = s.iterator();
+            while (it.hasNext()){
+                String tag = it.next();
+                int Count1 = 0;
 
-            for (int i = 0; i < Combo_Tag.size(); i ++){
-                for (int j = 0; j < Combo_Tag.get(i).length; j ++){
-                    if (Combo_Tag.get(i)[j].equals(tag_1)){
-                        Count1 ++;
+                for (int i = 0; i < Combo_Tag.size(); i ++){
+                    for (int j = 0; j < Combo_Tag.get(i).length; j ++){
+                        if (Combo_Tag.get(i)[j].equals(tag)){
+                            Count1 ++;
+                        }
                     }
                 }
-            }
+                Tag_Count_Map.put(tag, Count1);
 
-        Tag_1_Count_Map.put(tag_1, Count1);
+            }
         }
 
         // confidence value
+        Map<Set<String>, Integer> CV_Map = new HashMap<>();
+
         for (Set s : ConMap.keySet()){
             double cv;
-            String tag_1 = (String) s.iterator().next();
+            Iterator<String> iit = s.iterator();
 
-            cv = (double) ConMap.get(s) / Tag_1_Count_Map.get(tag_1);
-            if (cv > 0.5){
-                System.out.printf(s + "cv is " + "%.3f", cv);
-                System.out.println("\n");
+            while (iit.hasNext()){
+                String tag = iit.next();
+                cv = (double) ConMap.get(s) / Tag_Count_Map.get(tag);
+                if (cv > 0.085){
+                     if (CV_Map.containsKey(s)){
+                         CV_Map.put(s, CV_Map.get(s)+1);
+                     }else {
+                         CV_Map.put(s, 1);
+                     }
+                }
             }
-
+        }
+        System.out.println("source,target");
+        for (Set s : CV_Map.keySet()){
+            if (CV_Map.get(s) >= 1){
+                // System.out.println(s);
+                Iterator<String> itr = s.iterator();
+                int counter = 0;
+                while(itr.hasNext()){
+                    counter++;
+                    if (counter==1) {
+                        System.out.print(itr.next() + ",");
+                    }else {
+                        System.out.print(itr.next());
+                    }
+                }
+                System.out.print("\n");
             }
+        }
+       // System.out.println(OuterMap);
     }
 }
