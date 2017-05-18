@@ -12,7 +12,7 @@ function featureGraph(){
         .force("charge", d3.forceManyBody().strength(-65))
         .force("center", d3.forceCenter(width / 2, height / 2));
 
-    d3.json("data.json", function(error, graph) {
+    d3.json("newData.json", function(error, graph) {
         if (error) throw error;
 
         var link = svg.append("g")
@@ -35,6 +35,8 @@ function featureGraph(){
         var node = gnodes.append("circle")
             .attr("class", "nodes")
             .attr("r", function(d){return d.degree;})
+            .on("mouseover", connectedNodes)
+            .on("mouseout", allNodes)
             .style("fill", function(d) { return color(d.group); });
 
         var circleCoord = function(node, index, num_nodes){
@@ -103,5 +105,29 @@ function featureGraph(){
         if (!d3.event.active) simulation.alphaTarget(0);
         d.fx = null;
         d.fy = null;
+    }
+
+    function neighboring(a, b)
+    {
+        return linkedByIndex[a.index + "," + b.index];
+    }
+
+    function connectedNodes()
+    {
+        //Reduce the opacity of all but the neighbouring nodes
+        d = d3.select(this).node().__data__;
+        //console.log(d.name);
+        node.style("opacity", function (o) {
+            return neighboring(d, o) | neighboring(o, d) ? 1 : 0.1;
+        });
+        link.style("opacity", function (o) {
+            return d.index==o.source.index | d.index==o.target.index ? 1 : 0.1;
+        });
+    }
+
+    function allNodes()
+    {
+        node.style("opacity", 1);
+        link.style("opacity", 1);
     }
 }
