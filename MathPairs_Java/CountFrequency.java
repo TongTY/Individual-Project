@@ -111,7 +111,9 @@ public class CountFrequency{
                 for (String itag : sublist){
                     count ++;
                     if (count != sublist.size()) {
-                        System.out.print(itag + ",");
+                        if (!itag.equals(first50tag.get(i))) {
+                            System.out.print(itag + ",");
+                        }
                     }else {
                         System.out.print(itag);
                     }
