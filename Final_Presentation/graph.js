@@ -6,6 +6,9 @@ function featureGraph(){
         height = +svg.attr("height");
 
     var color = d3.scaleOrdinal(d3.schemeCategory20);
+    for (i = 0;  i < 12; i ++){
+        color(i);
+    }
 
     var simulation = d3.forceSimulation()
         .force("link", d3.forceLink().id(function(d){return d.id;}).distance(55).strength(1))
@@ -21,7 +24,8 @@ function featureGraph(){
             .data(graph.links)
             .enter().append("line")
             .attr("stroke-width", function(d) { return Math.sqrt(d.value); })
-            .style("marker-end", "url(#suit)");
+            .style("marker-end", "url(#suit)")
+            .style("stroke", function(d) {return color(d.color);});
 
         var gnodes = svg.selectAll("g.gnode")
             .data(graph.nodes)
