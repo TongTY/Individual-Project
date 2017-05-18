@@ -2,14 +2,7 @@
 This repository is used to record the progress of COMP4560 project.
 
 ## What's new this week:
-(11/05)
- 1. Under 'Individual-Project/Data Visualisation/...'<br />
-    1.1 '3_final_sv0.008cv0.09.json' is the final data I will use for visualisation.
- 2. Under 'MathPair'<br/>
-    1.1 'First50Subset.java' <br />
-    1.2 'subPairs.java' is the code for find out the subset for each tag with high frequency. 
- 3. 'Final_Presentation'.
-    1.1 The 'subGraph' is one example of all sub-graphs.
+(18/05)
 
 ## Files:
 
@@ -53,3 +46,12 @@ I added two files into folder MathPairs_Java.
    '2_graph_labels.png' is the graph which has labels.<br />
    '2_graph_v4.html' is the sorce code and I used d3.v4.js instead of d3.v3.js in this code.<br />
 3. Folder 'EnglishPairs' is totallt new. Just stores the same work as 'MathPairs_Java' does.<br/>
+
+(11/05)
+ 1. Under 'Individual-Project/Data Visualisation/...'<br />
+    1.1 '3_final_sv0.008cv0.09.json' is the final data I will use for visualisation.
+ 2. Under 'MathPair'<br/>
+    1.1 'First50Subset.java' <br />
+    1.2 'subPairs.java' is the code for find out the subset for each tag with high frequency. 
+ 3. 'Final_Presentation'.
+    1.1 The 'subGraph' is one example of all sub-graphs.
