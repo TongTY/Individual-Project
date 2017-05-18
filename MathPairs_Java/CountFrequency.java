@@ -1,14 +1,15 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import javax.print.attribute.standard.MediaSize;
+import java.io.*;
 import java.util.*;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
+import java.lang.*;
 
 /**
  * Created by Tong on 3/5/17.
  */
 public class CountFrequency{
     public static boolean DESC = false;
-    public static boolean ASC = true;
 
     public static void main(String[] args) throws Exception {
         List<String> TagNames = new ArrayList<>();
@@ -47,19 +48,19 @@ public class CountFrequency{
             String data = stringArr[i];
             String[] singletag = data.split("\t");
 
-            Combo_Tag.add(singletag); // now got a list of array
+            Combo_Tag.add(singletag); // now got a list of tag array
         }
 
         // count the Frequency of each tag name
         Map<String, Integer> NameFre = new HashMap<>();
-        int Frequency = 0;
 
         for (int i = 0; i < TagNames.size(); i ++){
+            int Frequency = 0;
 
             for (int j = 0; j < Combo_Tag.size(); j ++){
 
                 for (int o = 0; o < Combo_Tag.get(j).length; o ++){
-                    if (Combo_Tag.get(j)[o].equals(TagNames.get(i))){
+                    if (TagNames.get(i).equals(Combo_Tag.get(j)[o])){
                         Frequency ++;
                     }
                 }
@@ -69,9 +70,59 @@ public class CountFrequency{
 
         // fetch first 50 tags
         Map<String, Integer> sortedMap = sortByComparator(NameFre, DESC);
-       // System.out.println(sortedMap);
-        List<Map.Entry<String, Integer>> first50Tags = new ArrayList<>(sortedMap.entrySet()).subList(0,50);
-        System.out.println(first50Tags);
+
+        List<String> first50tag = new ArrayList<>();
+        int counter = 0;
+        for (String k : sortedMap.keySet()){
+            if (counter <= 5) {
+                first50tag.add(k);
+                counter++;
+            }
+        }
+     //   System.out.println(sortedMap);
+     //   System.out.println(first50tag); // -- both sortedMap and first50tag are correct
+
+        // first 50 sublist
+
+        for (int i = 0; i < first50tag.size(); i ++){
+            List<List<String>> SubCombo = new ArrayList<>();
+           // System.out.println(first50tag.get(i));
+
+            for (int j = 0; j < Combo_Tag.size(); j ++){
+                for (int o = 0; o < Combo_Tag.get(j).length; o ++){
+                    if (Combo_Tag.get(j)[o].equals(first50tag.get(i))){
+                        List<String> tempList = new ArrayList<>();
+
+                        for ( int m = 0; m < Combo_Tag.get(j).length; m ++){
+                                tempList.add(Combo_Tag.get(j)[m]);
+                        } // get the list which contains tagA
+                        SubCombo.add(tempList); // wrong wrong wrong
+                    }
+                }
+            } // get all tagcombo which has tagA in it
+
+          //  System.out.print(SubCombo);
+
+            FileOutputStream f = new FileOutputStream("/Users/Tong/Desktop/java/COMP4560/" + first50tag.get(i) + ".txt");
+            System.setOut(new PrintStream(f));
+            for(List<String> sublist : SubCombo){
+                int count = 0;
+
+                for (String itag : sublist){
+                    count ++;
+                    if (count != sublist.size()) {
+                        System.out.print(itag + ",");
+                    }else {
+                        System.out.print(itag);
+                    }
+                }
+                System.out.print("\n");
+            }
+          //  System.setOut(new PrintStream(new FileOutputStream("/Users/Tong/Desktop/java/COMP4560/" + first50tag.get(i) + ".txt"), true));
+//            SubCombo.stream().forEach(e -> System.out.println(e));
+        }
+
+      // a-> System.out.println(a);
     }
 
 
