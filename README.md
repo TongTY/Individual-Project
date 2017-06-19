@@ -1,10 +1,81 @@
+====================================================================
+Mining Domain Landscape from Social Q&A Websites
+====================================================================
+
+Project Description:
+———————————————————————————————————————————————————————————————————-
+This is the package of my individual project of COMP4560 in Australian National University.
+
+The project is to mine association rules from the math database collected from Mathematics StackExchange. The purpose of this project is to develop a website where people can use to find a summary of math landscape. The entire process of the project has three stages, including association rule mining, data visualisation, and web implementation.———————————————————————————————————————————————————————————————————-
+ 
+
+Usages:
+———————————————————————————————————————————————————————————————————-
+All the files are tested under macOS Sierra Version 10.12.4
+
+#Folder_1 ‘1_Association_Rule_Mining’:
+
+##Contents: 
+
+	## MathPairs_Java:
+	The folder is for storing the code and files used in finding 			association-rule pairs of MathDataBase.
+
+	.JAVA FILES:
+	1.’MathPairs.java’: for finding out all the association pairs 
+	2.’CountFrequency.java’:count the frequency of tags and record the first 	10 tags
+	3.’First50Subset.java’: pick the sub-tagConbo for the 10 tags.
+
+##To run the code:
+
+	IntelliJ IDEA 2016.3.6. Can be found in https://www.jetbrains.com/idea/
+
+
+	Others:
+	1. 'MTagCombo.txt' is the original data that I used for finding 		association rules
+	2. 'MTagName.csv' is a file of all the tags' names, which was 	not used in the final version of the algorithm
+	3. 'Results' is used to store the results based on different 	support values & confident values.
+	4. The rest are result files.
+
+
+#Folder_2 ‘2_Web_Implementation’:
+
+	##Math_Web:
+	The folder is for storing the code for implementing the website.
+
+	CORE FILES:
+	1. MathLandScape.html
+	2. graph.js
+	3. newData.json
+
+##To run code:
+Copy the above core files into the same path of the project. And run the MathLandScape.html in Google Chrome.
+
+	##png: some .png files that show the graphs
+
+
+#Folder_3 ‘3_Gephi’:
+Some Gephi projects for data community detection.
+
+##To run the project
+	Gephi 0.9.1. Can be found in https://gephi.org/users/download/
+
+
+#Folder_4 ‘Otrher work’:
+The other relevant work that has been done during the project.
+
+#Weekly_Meeting_Logbook:
+Some notes on Github repository. 
+The link is https://github.com/TongTY/Individual-Project
+
+(The raw data of math database can be download at https://archive.org/download/stackexchange)
+
+
+# Meeting records:
+
 # Individual-Project
 This repository is used to record the progress of COMP4560 project.
 
 ## What's new this week:
-(18/05)
-1. Under 'Final_Presentation':<br />
-   1.1 LinkWithColor.png shows the final version of the whole graph which will be displayed on the homepage.<br />
 
 ## Files:
 
@@ -57,3 +128,8 @@ I added two files into folder MathPairs_Java.
     1.2 'subPairs.java' is the code for find out the subset for each tag with high frequency. 
  3. 'Final_Presentation'.
     1.1 The 'subGraph' is one example of all sub-graphs.
+    
+    (18/05)
+1. Under 'Final_Presentation':<br />
+   1.1 LinkWithColor.png shows the final version of the whole graph which will be displayed on the homepage.<br />
+
